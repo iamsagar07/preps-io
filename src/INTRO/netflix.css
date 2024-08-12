@@ -1,0 +1,35 @@
+.netflix-logo {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  
+  .netflix-logo span {
+    opacity: 0;
+    animation: appear 1s ease forwards;
+  }
+  
+  @keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  /* Example for individual timing */
+  .netflix-logo span:nth-child(1) { animation-delay: 0.1s; }
+  .netflix-logo span:nth-child(2) { animation-delay: 0.2s; }
+  .netflix-logo span:nth-child(3) { animation-delay: 0.3s; }
+  .netflix-logo span:nth-child(4) { animation-delay: 0.4s; }
+  .netflix-logo span:nth-child(5) { animation-delay: 0.5s; }
+  .netflix-logo span:nth-child(6) { animation-delay: 0.6s; }
+  .netflix-logo span:nth-child(7) { animation-delay: 0.7s; }
+  
+  /* Adding a glow effect (optional) */
+  @keyframes glow {
+    0%, 100% { text-shadow: none; }
+    50% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000; }
+  }
+  
+  .netflix-logo span:hover {
+    animation: glow 1s infinite;
+  }
+  
